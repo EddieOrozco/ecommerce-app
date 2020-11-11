@@ -3,13 +3,14 @@ import { Switch, Route } from 'react-router-dom';
 
 import HomePage from './pages/homepage/HomePage.component';
 import ShopPage from './pages/shop/ShopPage.component';
+import Header from './components/header/header';
 
 import './App.css';
 
 function App() {
   return (
     <div>
-      {/* What is Swiych for? */}
+      <Header />
       <Switch>
         <Route exact path='/' component={HomePage} />
         <Route exact path='/shop' component={ShopPage} />
