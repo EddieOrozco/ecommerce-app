@@ -2,6 +2,7 @@ import React from 'react';
 import './menuitem.styles.scss';
 import { withRouter } from 'react-router-dom';
 
+// ...otherSectionProps
 const MenuItem = ({ title, imageUrl, size, history, linkUrl, match }) => (
   <div
     className={`${size} menu-item`}
